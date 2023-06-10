@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body onload="loadTheme()">
+    <header>
+        <img src="images/logo.jpg" alt="">
+        <div>
+            <b class="hotline"><i class="bi bi-telephone"></i>HOTLINE: 0987654321</b>
+            <div class="color">
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <i class="bi bi-justify"></i>
+    </div>
+    <nav>
+        <a href="">Trang chủ</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Tin tức</a>
+        <a href="">Tour trong nước</a>
+        <a href="">Tour quốc tế</a>
+        <a href="">Liên hệ</a>
+        <a href="login.html"><i class="bi bi-person-circle"></i></a>
+    </nav>
+    <div class="slide">
+        <img id="banner" src="images/tour.jpg" alt="" >
+        <i class="bi bi-caret-left" onclick="prev()"></i>
+        <i class="bi bi-caret-right" onclick="next()"></i>
+        <div class="list">
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+    <main>
+        <h2>Du lịch trong nước</h2>
+        <hr color="#FC6600">
+        <section class="list-tour">
+            <div>
+                <img src="images/dalat.jpg" alt="">
+                <p class="name"><b>Tour Đà Lạt</b></p>
+                <p class="gia"><del style="color: black;">2.000.000.000đ</del>    1.990.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+            <div>
+                <img src="images/danang.jpg" alt="">
+                <p class="name"><b>Tour Đà Nẵng</b></p>
+                <p class="gia"><del style="color: black;">5.900.000.000đ</del>    3.970.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+            <div>
+                <img src="images/haiduong.jpg" alt="">
+                <p class="name"><b>Tour Hải Dương</b></p>
+                <p class="gia"><del style="color: black;">4.470.000.000đ</del>    2.890.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div >
+            <div>
+                <img src="images/hue.jpg" alt="">
+                <p class="name"><b>Tour Huế</b></p>
+                <p class="gia"><del style="color: black;">8.740.000.000đ</del>    5.990.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+        </section>
+        <section class="list-tour">
+            <div>
+                <img src="images/quynhon.jpg" alt="">
+                <p class="name"><b>Tour Quy Nhơn</b></p>
+                <p class="gia"><del style="color: black;">3.500.000.000đ</del>    2.990.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+            <div>
+                <img src="images/ninhbinh.jpg" alt="">
+                <p class="name"><b>Tour Ninh Bình</b></p>
+                <p class="gia"><del style="color: black;">5.880.000.000đ</del>    4.970.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+            <div>
+                <img src="images/phocohoian.jpg" alt="">
+                <p class="name"><b>Tour Phố cổ Hội An</b></p>
+                <p class="gia"><del style="color: black;">3.470.000.000đ</del>    2.890.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div >
+            <div>
+                <img src="images/sapa.jpg" alt="">
+                <p class="name"><b>Tour Sapa</b></p>
+                <p class="gia"><del style="color: black;">6.740.000.000đ</del>    4.990.000đ </p>
+                <p class="time"><i class="bi bi-calendar-check"></i> Từ ngày 15/6 - 17/6</p>
+                <a href="">Xem thêm</a>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="images/banner.png" alt="">
+        </section>
+        <h2>Du lịch Quốc Tế</h2>
+        <hr color="#FC6600">
+        <section class="grid-container">
+            <div class="item1">
+                <img src="images/thailan1.jpg" alt="" class="image">
+                <div class="middle">
+                    <div class="text"><a href="chitiet.html">Xem thêm</a></div>
+                </div>
+                <p>Du lịch Thái Lan</p>
+                
+            </div>
+            <div class="item2">
+                <img src="images/hanquoc.jpg" alt="">
+                <div class="middle">
+                    <div class="text"><a href="chitiet.html">Xem thêm</a></div>
+                </div>
+                <p>Du lịch Hàn Quốc</p>
+            </div>
+            <div class="item3">
+                <img src="images/italy.jpg" alt="">
+                <div class="middle">
+                    <div class="text"><a href="chitiet.html">Xem thêm</a></div>
+                </div>
+                <p>Du lịch Italya</p>
+            </div>
+            <div class="item4">
+                <img src="images/nhatban.jpg" alt="">
+                <div class="middle">
+                    <div class="text"><a href="chitiet.html">Xem thêm</a></div>
+                </div>
+                <p>Du lịch Nhật Bản</p>
+            </div>
+            <div class="item5">
+                <img src="images/trungquoc.jpg" alt="">
+                <div class="middle">
+                    <div class="text">Xem thêm</div>
+                </div>
+                <p>Du lịch Trung Quốc</p>
+            </div>
+        </section>
+        <h2>Phản hồi của khách hàng</h2>
+        <hr color="#FC6600">
+        <section class="feedback">
+            <article>
+                <img src="images/kh.jpg" alt="">
+                <p><b>Khách hàng 1</b></p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <span>
+                    <i>
+                        "Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lịch của công ty"
+                    </i>
+                </span>
+            </article>
+            <article>
+                <img src="images/kh1.jpg" alt="">
+                <p><b>Khách hàng 2</b></p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <span>
+                    <i>
+                        "Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lịch của công ty"
+                    </i>
+                </span>
+            </article>
+            <article>
+                <img src="images/kh2.jpg" alt="">
+                <p><b>Khách hàng 3</b></p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <span>
+                    <i>
+                        "Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lịch của công ty"
+                    </i>
+                </span>
+            </article>
+        </section>
+        <h3>THƯ VIỆN ẢNH CỦA KHÁCH</h3>
+        <hr color="#FC6600">
+        <section class="gallery">
+            <div class="column-3">
+                <img src="images/gallery1.jpg" alt="">
+                <img src="images/gallery2.jpg" alt="">
+                <img src="images/gallery3.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="images/gallery4.jpg" alt="">
+                <img src="images/gallery5.jpg" alt="">
+                <img src="images/gallery6.jpg" alt="">
+                <img src="images/gallery7.jpg" alt="">
+            </div>
+            <div class="column-3">
+                <img src="images/gallery8.jpg" alt="">
+                <img src="images/gallery9.jpg" alt="">
+                <img src="images/gallery10.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="images/gallery11.jpg" alt="">
+                <img src="images/gallery12.jpg" alt="">
+                <img src="images/gallery13.jpg" alt="">
+                <img src="images/gallery14.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h2>LIÊN HỆ</h2>
+                <hr />
+                <p>Phường Tân Chánh Hiệp, Q.12, TP.HCM</p>
+                <p>Email: dulichviet@gmail.com</p>
+                <p>Điện thoại: 0123456789 - 0987654321</p>
+                <p>Mã số thuế: 0311854004</p>
+                <p>GPKD lữ hành quốc tế số 79-400/2015/TCDL</p>
+            </div>
+            <div>
+                <h2>BẢN ĐỒ</h2>
+                <hr />
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4435924064624!2d106.62525347365663!3d10.853826357764108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2sQuang%20Trung%20Software%20City!5e0!3m2!1sen!2s!4v1685066629059!5m2!1sen!2s" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h2>KẾT NỐI</h2>
+                <hr />
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <p>Đăng ký nhận tin khuyến mãi</p>
+                <input 
+                type="text"
+                placeholder="Nhập email nhận khuyến mãi"
+                width="90%"/>
+                <button class="btn">ĐĂNG KÝ</button>
+            </div>
+        </section>
+    </footer>
+    <img class="zalo" src="images/zalo.svg" alt="">
+    <img class="messenger" src="images/messenger.svg" alt="">
+    <script src="main.js"></script>
+</body>
+</html>
